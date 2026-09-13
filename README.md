@@ -1,4 +1,4 @@
-# PnH-KiCAD-template
+# Strain gauge amplifier
 
-Please update this readme.
-Please make a KiCAD project, then update the PROJECT_NAME at the top of the pcb_image.yaml (inside the .github/workflows folder)
+A strain gauge amplifer, designed to get useful readings out of a strain gauge sensor.
+Specific sensor still TBD
