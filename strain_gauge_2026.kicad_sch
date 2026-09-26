@@ -2044,12 +2044,6 @@
 		(uuid "fb7fcf33-7432-4cc6-a573-5ccdf6fff52e")
 	)
 	(junction
-		(at 156.21 151.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0366a082-2070-43c3-ba2e-cdb41fdfa7f9")
-	)
-	(junction
 		(at 104.14 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2086,12 +2080,6 @@
 		(uuid "35b34dab-b76a-461e-bae7-7e84dd548e0c")
 	)
 	(junction
-		(at 162.56 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3782995a-2d0b-4104-9cb4-468bdc762bb9")
-	)
-	(junction
 		(at 104.14 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2104,22 +2092,16 @@
 		(uuid "42437859-cfcf-4846-8c15-f17965b57707")
 	)
 	(junction
-		(at 113.03 151.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4638b16a-d35c-434b-b833-0e0989e4b254")
-	)
-	(junction
-		(at 119.38 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4694d4d9-6428-4dc6-9943-2bf770cfe31b")
-	)
-	(junction
 		(at 104.14 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "77ad38ff-022f-4f48-a172-aea5447ecc82")
+	)
+	(junction
+		(at 107.95 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7fea1b5a-1076-48c7-b0ef-461541e0a288")
 	)
 	(junction
 		(at 133.35 109.22)
@@ -2216,16 +2198,6 @@
 			(type default)
 		)
 		(uuid "0ae21218-74f2-4dfd-8bd0-4d218bdc241d")
-	)
-	(wire
-		(pts
-			(xy 156.21 151.13) (xy 162.56 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0aeb97b0-479d-42fa-aa48-7d1dbec69ea0")
 	)
 	(wire
 		(pts
@@ -2396,16 +2368,6 @@
 			(type default)
 		)
 		(uuid "39fdacc6-471b-42c0-a67c-b555951334c6")
-	)
-	(wire
-		(pts
-			(xy 119.38 140.97) (xy 119.38 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e69c25f-8945-4213-bcee-7c7af10e3d18")
 	)
 	(wire
 		(pts
@@ -2909,16 +2871,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 151.13) (xy 119.38 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "debe8f8f-fe3c-4a2b-a178-0af72edf87a6")
-	)
-	(wire
-		(pts
 			(xy 87.63 80.01) (xy 91.44 80.01)
 		)
 		(stroke
@@ -2926,16 +2878,6 @@
 			(type default)
 		)
 		(uuid "e689fdd4-e13e-4686-a300-c8f80954fa10")
-	)
-	(wire
-		(pts
-			(xy 162.56 140.97) (xy 162.56 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6b63303-645d-40ed-a0ed-f59f57c9ac85")
 	)
 	(wire
 		(pts
@@ -7389,6 +7331,85 @@
 			(project "strain_gauge_2026"
 				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
 					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 107.95 50.8 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc10245d-27e3-4b30-986b-427d2f2d178a")
+		(property "Reference" "#FLG01"
+			(at 109.855 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 111.76 50.7999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 107.95 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0f416dd1-f41d-4211-a4fa-b4bae4764785")
+		)
+		(instances
+			(project "strain_gauge_2026"
+				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
