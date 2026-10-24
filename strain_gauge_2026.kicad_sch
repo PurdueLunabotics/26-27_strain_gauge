@@ -936,6 +936,244 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "strain_gauge_library:DFR1193"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0.762 0.762 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "DFR1193_0_1"
+				(rectangle
+					(start -1.27 -1.27)
+					(end 16.51 -19.05)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "DFR1193_1_1"
+				(pin input line
+					(at -3.81 -2.54 0)
+					(length 2.54)
+					(name "VCC1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -3.81 -6.35 0)
+					(length 2.54)
+					(name "GND1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -3.81 -10.16 0)
+					(length 2.54)
+					(name "SCL_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -3.81 -13.97 0)
+					(length 2.54)
+					(name "SDA_IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 19.05 -17.78 180)
+					(length 2.54)
+					(name "RDY"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 19.05 -13.97 180)
+					(length 2.54)
+					(name "SDA_OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 19.05 -10.16 180)
+					(length 2.54)
+					(name "SCL_OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 19.05 -6.35 180)
+					(length 2.54)
+					(name "GND2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 19.05 -2.54 180)
+					(length 2.54)
+					(name "VCC2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "strain_gauge_library:NAU7802SGI"
 			(pin_names
 				(offset 1.016)
@@ -1490,16 +1728,6 @@
 		)
 		(uuid "1ed708f1-2234-4c41-86bf-ca2ca711ea53")
 	)
-	(text "From I2C Translator"
-		(exclude_from_sim no)
-		(at 250.19 81.788 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "228219b0-8273-47fa-a99d-f7079a3562e3")
-	)
 	(text "R_gaugeB2 (solder on for half bridge)"
 		(exclude_from_sim no)
 		(at 75.438 161.544 0)
@@ -1600,6 +1828,16 @@
 		)
 		(uuid "9cc9a95e-9095-4d16-b6ae-cf9bc560a87a")
 	)
+	(text "SCL_OUT, SDA_OUT, RDY are Not connected here because they will be\nconnected to the MCU via the JST on the board,they will not need \nto be connected to any nets on the PCB with the ADC"
+		(exclude_from_sim no)
+		(at 242.316 115.824 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9df8d6ba-3c2e-414e-b98b-39c7a0c3da5e")
+	)
 	(text "September 26th, 2026\n"
 		(exclude_from_sim no)
 		(at 229.616 193.294 0)
@@ -1642,7 +1880,7 @@
 	)
 	(text "make sure this is on the right side of the board"
 		(exclude_from_sim no)
-		(at 247.65 120.142 0)
+		(at 212.09 51.562 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1700,6 +1938,16 @@
 		)
 		(uuid "df5102ce-81e0-4045-a4da-aa6e838f0c88")
 	)
+	(text "On the datasheet (LTC4316) SCL_IN, SDA_IN are from the controller,\nSCL_OUT, SDA_OUT are to the sensor, just a naming convension but\non the schematic SCL_IN, SDA_IN are to sensor, SCL_OUT, SDA_OUT are \nto the MCU"
+		(exclude_from_sim no)
+		(at 242.824 65.024 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e96f0023-e47f-4e39-a675-b803f996400f")
+	)
 	(text "References Used:"
 		(exclude_from_sim no)
 		(at 189.484 168.91 0)
@@ -1737,12 +1985,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1ad98ab1-3d82-466a-83b9-dd48237b44e7")
-	)
-	(junction
-		(at 255.27 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1e887b47-6faa-4f1e-8edc-5b8139e007a3")
 	)
 	(junction
 		(at 120.65 87.63)
@@ -1804,15 +2046,17 @@
 		(color 0 0 0 0)
 		(uuid "f40f75b6-a02f-487f-91d7-a1ec54bd5039")
 	)
-	(junction
-		(at 255.27 92.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ff6c45eb-0cfd-4bb5-85c0-145d6805997c")
-	)
 	(no_connect
 		(at 172.72 102.87)
 		(uuid "032dbacf-ab35-48d2-9c96-c4ee11d9fa03")
+	)
+	(no_connect
+		(at 252.73 95.25)
+		(uuid "09a27620-fe3f-41c0-8468-b6fc495e7cf9")
+	)
+	(no_connect
+		(at 252.73 99.06)
+		(uuid "467c6c18-51c5-42e7-84da-214b26a9edda")
 	)
 	(no_connect
 		(at 172.72 100.33)
@@ -1821,6 +2065,10 @@
 	(no_connect
 		(at 172.72 85.09)
 		(uuid "a28969fb-a74e-415d-8b34-85468f8b0cea")
+	)
+	(no_connect
+		(at 252.73 102.87)
+		(uuid "c0975323-d873-43d8-84bd-06c5e3dc32c9")
 	)
 	(wire
 		(pts
@@ -1834,23 +2082,13 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 92.71) (xy 241.3 90.17)
+			(xy 218.44 93.98) (xy 218.44 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "03407444-9fc2-43e6-84fe-b251949da062")
-	)
-	(wire
-		(pts
-			(xy 255.27 92.71) (xy 256.54 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "06034a20-b8ef-4352-a869-743c5786a5d4")
+		(uuid "01d3d8b3-af94-46a2-ae56-34bb3b2abcf2")
 	)
 	(wire
 		(pts
@@ -1934,6 +2172,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 83.82) (xy 218.44 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22c6f5c7-14e7-46fa-89da-afafecda71c3")
+	)
+	(wire
+		(pts
 			(xy 104.14 95.25) (xy 107.95 95.25)
 		)
 		(stroke
@@ -2004,16 +2252,6 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 95.25) (xy 256.54 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "407caa1f-c7b4-4594-8062-3cd3dba5c27b")
-	)
-	(wire
-		(pts
 			(xy 33.02 45.72) (xy 39.37 45.72)
 		)
 		(stroke
@@ -2044,6 +2282,16 @@
 	)
 	(wire
 		(pts
+			(xy 266.7 83.82) (xy 266.7 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49ff7461-c96e-464c-bdbf-77774306b362")
+	)
+	(wire
+		(pts
 			(xy 181.61 80.01) (xy 181.61 55.88)
 		)
 		(stroke
@@ -2051,16 +2299,6 @@
 			(type default)
 		)
 		(uuid "4d58ed29-d7d5-46b4-9a5d-f677fbfb4e38")
-	)
-	(wire
-		(pts
-			(xy 229.87 97.79) (xy 256.54 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4edfa5cc-5845-4f66-b226-6bd1915225cb")
 	)
 	(wire
 		(pts
@@ -2074,13 +2312,13 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 92.71) (xy 255.27 92.71)
+			(xy 252.73 91.44) (xy 266.7 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "577a2c10-2393-4adb-bf88-3e4a7d30c9b1")
+		(uuid "558a9c86-18d5-424a-bdd0-68e91410bba8")
 	)
 	(wire
 		(pts
@@ -2121,26 +2359,6 @@
 			(type default)
 		)
 		(uuid "7195adda-4147-4e5c-bad4-09500b88bf19")
-	)
-	(wire
-		(pts
-			(xy 229.87 100.33) (xy 256.54 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75ff5e63-506a-41ac-addd-3923fc9dca86")
-	)
-	(wire
-		(pts
-			(xy 241.3 95.25) (xy 255.27 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d81c27f-f167-4c57-8dc7-42029f9369f0")
 	)
 	(wire
 		(pts
@@ -2201,6 +2419,16 @@
 			(type default)
 		)
 		(uuid "9c158d11-32cf-46a6-97b3-1fd843ffd3eb")
+	)
+	(wire
+		(pts
+			(xy 218.44 91.44) (xy 229.87 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f253178-438a-42a5-8e3d-b0c87e1abbcf")
 	)
 	(wire
 		(pts
@@ -2414,6 +2642,26 @@
 	)
 	(wire
 		(pts
+			(xy 266.7 93.98) (xy 266.7 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3fa74fa-9d3a-481c-ac80-df23ba8b2028")
+	)
+	(wire
+		(pts
+			(xy 218.44 87.63) (xy 229.87 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f669b68a-4dcf-4d84-ab36-066e586b72e5")
+	)
+	(wire
+		(pts
 			(xy 106.68 29.21) (xy 106.68 31.75)
 		)
 		(stroke
@@ -2431,6 +2679,16 @@
 			(type default)
 		)
 		(uuid "fddc0e25-86f6-4d88-8177-0ed696f3f4cb")
+	)
+	(wire
+		(pts
+			(xy 252.73 87.63) (xy 266.7 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff6a0784-57ed-431c-a613-730d22b4a297")
 	)
 	(global_label "V_excitation"
 		(shape input)
@@ -2525,30 +2783,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-	)
-	(global_label "SDA"
-		(shape input)
-		(at 229.87 100.33 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3555eacf-86de-418f-bcd9-d26ba187e814")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 223.3167 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 	)
@@ -2672,9 +2906,9 @@
 			)
 		)
 	)
-	(global_label "SCLK"
+	(global_label "SDA"
 		(shape input)
-		(at 229.87 97.79 180)
+		(at 229.87 99.06 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2682,9 +2916,9 @@
 			)
 			(justify right)
 		)
-		(uuid "8a7c3c1d-f3d6-4771-928b-a637c8a71a48")
+		(uuid "7ed68011-c0e1-49d5-86f9-8d8d8e26c9a1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 222.1072 97.79 0)
+			(at 223.3167 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2885,6 +3119,30 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "SCLK"
+		(shape input)
+		(at 229.87 95.25 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "de78e7cb-7abe-4dc0-99b2-8e5775d989c6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 222.1072 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -3248,93 +3506,6 @@
 			(project "strain_gauge_2026"
 				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
 					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x04_Socket")
-		(at 261.62 95.25 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0dc37faa-b3dd-4fc4-9674-5d983e9c678b")
-		(property "Reference" "J2"
-			(at 253.238 109.474 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x04_Socket"
-			(at 246.38 112.0139 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 261.62 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 261.62 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 261.62 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "5ffd4a93-18cf-4fc7-ac3b-dccecdd8fac0")
-		)
-		(pin "3"
-			(uuid "b029abfb-8b32-47a7-bd10-76dbf24a8fef")
-		)
-		(pin "1"
-			(uuid "5b2ef467-5f6b-4810-8b44-b0831bed36d7")
-		)
-		(pin "2"
-			(uuid "238189a4-3dd7-434c-90f5-d89108922167")
-		)
-		(instances
-			(project "strain_gauge_2026"
-				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
-					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -3770,7 +3941,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 84.7852 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -3813,6 +3984,84 @@
 			(project "strain_gauge_2026"
 				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 266.7 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "333a3e26-3076-4577-a218-fd0d37e931c2")
+		(property "Reference" "#PWR08"
+			(at 266.7 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 266.7 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 266.7 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 266.7 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8262d243-cf70-46c1-8603-4197519ce8b9")
+		)
+		(instances
+			(project "strain_gauge_2026"
+				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -4141,6 +4390,84 @@
 			(project "strain_gauge_2026"
 				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 218.44 93.98 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c47aaaa-277f-42b1-96c4-c638a27cbec8")
+		(property "Reference" "#PWR020"
+			(at 218.44 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 218.44 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 218.44 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2d5ecb12-bdce-4975-ab6c-a344bc77d3aa")
+		)
+		(instances
+			(project "strain_gauge_2026"
+				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -4634,84 +4961,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDD")
-		(at 241.3 90.17 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "76bd9eaf-638c-4c1d-891e-9715e2e51abf")
-		(property "Reference" "#PWR03"
-			(at 241.3 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 241.3 85.09 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 241.3 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 241.3 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 241.3 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d78713ec-f4b1-4afd-a900-594a094b137e")
-		)
-		(instances
-			(project "strain_gauge_2026"
-				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 111.76 100.33 90)
 		(unit 1)
@@ -4785,6 +5034,107 @@
 			(project "strain_gauge_2026"
 				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
 					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "strain_gauge_library:DFR1193")
+		(at 233.68 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "84851881-735a-4c43-8c1e-5154e2d02ad8")
+		(property "Reference" "U2"
+			(at 241.3 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 233.68 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "strain_gauge_footprint_lib:DFR1193"
+			(at 233.68 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 233.68 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "77161a83-ea93-49b7-a17f-a4f727c9ecba")
+		)
+		(pin "4"
+			(uuid "c9b36f59-ade5-4291-928c-2fbeb615caa1")
+		)
+		(pin "8"
+			(uuid "cd474e42-108f-418e-8898-f27826ce6708")
+		)
+		(pin "3"
+			(uuid "07e2d592-7a93-4305-ae7c-4ddf34fb96cc")
+		)
+		(pin "1"
+			(uuid "ceb106f6-c733-4e29-b0d5-e6d6bac5e01d")
+		)
+		(pin "6"
+			(uuid "991abff3-6800-4973-ba11-c67479d8f843")
+		)
+		(pin "9"
+			(uuid "03473895-b7d3-45ac-995e-9cd06d186f5b")
+		)
+		(pin "5"
+			(uuid "3f4c3d17-3ab7-47a5-9fc1-50d20dcc904d")
+		)
+		(pin "7"
+			(uuid "d77502ed-40e9-4b01-8da1-3d90c72840bf")
+		)
+		(instances
+			(project "strain_gauge_2026"
+				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -5374,8 +5724,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 255.27 92.71 0)
+		(lib_id "power:GND")
+		(at 266.7 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5384,9 +5734,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9dfd091f-9c7a-45c6-bae5-32ca1ce05e89")
-		(property "Reference" "#FLG03"
-			(at 255.27 90.805 0)
+		(uuid "9f119459-e129-4752-9aa3-9f3c49a5a41d")
+		(property "Reference" "#PWR021"
+			(at 266.7 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5396,8 +5746,8 @@
 				)
 			)
 		)
-		(property "Value" "PWR_FLAG"
-			(at 255.27 87.63 0)
+		(property "Value" "GND"
+			(at 266.7 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5406,8 +5756,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-28_4.4x9.7mm_P0.65mm"
-			(at 255.27 92.71 0)
+		(property "Footprint" ""
+			(at 266.7 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5418,7 +5768,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 92.71 0)
+			(at 266.7 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5428,8 +5778,8 @@
 				)
 			)
 		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 255.27 92.71 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 266.7 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5440,12 +5790,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "b5f2b524-269e-4700-ae7e-8521d02ef5ea")
+			(uuid "601eef5b-2eb6-41cb-9b6c-a2411b5b1a51")
 		)
 		(instances
 			(project "strain_gauge_2026"
 				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
-					(reference "#FLG03")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -5606,83 +5956,6 @@
 			(project "strain_gauge_2026"
 				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
 					(reference "C10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 255.27 95.25 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ad90a9fa-946f-4711-8fd7-2cec9c3715e8")
-		(property "Reference" "#FLG04"
-			(at 255.27 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 248.666 96.774 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:TSSOP-28_4.4x9.7mm_P0.65mm"
-			(at 255.27 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 255.27 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 255.27 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "057dd1d5-d097-4af1-b3f0-64c0c783b5de")
-		)
-		(instances
-			(project "strain_gauge_2026"
-				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
-					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -5955,7 +6228,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W3.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 155.9052 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -6167,85 +6440,6 @@
 			(project "strain_gauge_2026"
 				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
 					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 241.3 95.25 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d92c937b-b044-4edd-914f-73c42606abe5")
-		(property "Reference" "#PWR01"
-			(at 234.95 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 237.49 95.2499 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 241.3 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 241.3 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 241.3 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fa51ff29-ccc7-48f0-9712-0b26dc1eea7d")
-		)
-		(instances
-			(project "strain_gauge_2026"
-				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
-					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -6564,6 +6758,84 @@
 			(project "strain_gauge_2026"
 				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 218.44 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ed4dd407-13b4-4186-9b08-653bedc42c3f")
+		(property "Reference" "#PWR07"
+			(at 218.44 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 218.44 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 218.44 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e8225a8e-e659-4e0a-9a0e-53cf5e65a557")
+		)
+		(instances
+			(project "strain_gauge_2026"
+				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
