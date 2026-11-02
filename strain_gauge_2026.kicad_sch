@@ -1684,16 +1684,6 @@
 		)
 		(uuid "4696055d-9cf5-48ed-b957-4fe07cfb8b7f")
 	)
-	(text "TODO: Add a way to choose between quarter and half bridge by soldering\non a resistor. Make all resistors through hole."
-		(exclude_from_sim no)
-		(at 52.832 185.166 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "562d2a2a-c8b9-424e-a7bc-4859781055c6")
-	)
 	(text "v1.1"
 		(exclude_from_sim no)
 		(at 275.082 193.294 0)
@@ -1704,15 +1694,15 @@
 		)
 		(uuid "71971bee-6f8e-4740-865b-73b7f356bad8")
 	)
-	(text "DRDY pin description: Additionally, a \"data ready\" output pin - DRDY pin is\nprovided to indicate to the host that a new conversion has been completed and that\ndata are ready to be read from the device. The host may either use this signal or poll\ndevice register Reg0x00[5] CR bit to determine when new data are available."
+	(text "NOTE: Connect R_gaugeA2/R_gaugeB2 for Half bridge (leave R3/R7 unsoldered)\nand solder R3/R7 for quarter bridge (leave Rgauges unconnected)\ndo not have R3 & R_gaugeA2 or R7 & R_gaugeB2 connected at the same time"
 		(exclude_from_sim no)
-		(at 231.14 159.512 0)
+		(at 122.174 176.276 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "7287e424-bfab-4729-ad28-0ee5f0b3c48c")
+		(uuid "82b1f39a-01a3-4d97-a84f-5f158c94a054")
 	)
 	(text "Purdue Lunabotics NAU7802 Strain Gauge Amplifier"
 		(exclude_from_sim no)
@@ -1733,16 +1723,6 @@
 			)
 		)
 		(uuid "958ae0e8-2894-4fc6-80cc-2744452eb5c9")
-	)
-	(text "We will be using this as an LDO output voltage,\nKiCAD thinks its an input pin \n(which it can be, if we were to use an \nexternal regulator, but using the internal\none is much easier)"
-		(exclude_from_sim no)
-		(at 155.702 32.512 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "97ff6989-d031-4415-9b74-59ead1bd2178")
 	)
 	(text "NOTE: We want AVDD to be at most 2.7 as 3.0 would\napproach its maximum drive current of 10mA.\nAVDD is programmable with its max value being\nVDD - 0.3"
 		(exclude_from_sim no)
@@ -1774,16 +1754,6 @@
 		)
 		(uuid "9fb1cf03-d8f0-44cc-9867-3cb7640246d3")
 	)
-	(text "TODO: Finalize footprints\n- figure out exact footprint for switches\n- figure out which JST footprint to use for the connectors\n- figure out what footprint to use for the strain resistors"
-		(exclude_from_sim no)
-		(at 145.034 138.43 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "a070c92a-b7b6-4115-b81f-30a731dd51c7")
-	)
 	(text "THT resistor\nsolder on for \nquarter bridge\n"
 		(exclude_from_sim no)
 		(at 67.818 123.444 0)
@@ -1793,26 +1763,6 @@
 			)
 		)
 		(uuid "ade92e28-bfc2-422d-87cc-739830dda452")
-	)
-	(text "make sure this is on the right side of the board"
-		(exclude_from_sim no)
-		(at 212.09 51.562 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "b4aa0132-0ca6-444b-9318-a3b1f3b53b07")
-	)
-	(text "NOTE: For half bridge, solder on extra strain gauge spot,\nleave THT resistor (R3,R7) UNSOLDERED.\nLikewise for quarter bridge, solder on the THT resistor and\nleave the other strain gauge UNSOLDERED\ndo NOT solder on both at the same time!!!"
-		(exclude_from_sim no)
-		(at 131.826 169.418 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "b5ac029f-4d2f-4c10-b49c-34aae1c9bc2c")
 	)
 	(text "THT resistor\nsolder on for \nquarter bridge\n"
 		(exclude_from_sim no)
@@ -1836,7 +1786,7 @@
 	)
 	(text "NOTE: Switching between channels triggers a new sample,\nthere is a wait time (i think 6 clock cycles) after\nswitching channels (check datasheet)\n"
 		(exclude_from_sim no)
-		(at 113.284 120.65 0)
+		(at 154.94 133.604 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1854,9 +1804,9 @@
 		)
 		(uuid "df5102ce-81e0-4045-a4da-aa6e838f0c88")
 	)
-	(text "On the datasheet (LTC4316) SCL_IN, SDA_IN are from the controller,\nSCL_OUT, SDA_OUT are to the sensor, just a naming convension but\non the schematic SCL_IN, SDA_IN are to sensor, SCL_OUT, SDA_OUT are \nto the MCU"
+	(text "On the datasheet (LTC4316) SCL_IN, SDA_IN are from the controller,\nSCL_OUT, SDA_OUT are to the sensor, just a naming convension but\non the schematic SCL_IN, SDA_IN are to sensor, SCL_OUT, SDA_OUT are \nto the MCU. These already have JST connectors to go to the MCU, so \nthey dont need to be connected to any nets on our board"
 		(exclude_from_sim no)
-		(at 242.824 65.024 0)
+		(at 240.284 69.85 0)
 		(effects
 			(font
 				(size 1.27 1.27)
