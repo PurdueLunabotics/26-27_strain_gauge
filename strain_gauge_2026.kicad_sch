@@ -858,8 +858,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 0.762 0.762 0)
+			(property "Reference" "U2"
+				(at 7.62 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -878,7 +878,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "strain_gauge_footprint_lib:DFR1193"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -925,7 +925,7 @@
 				)
 			)
 			(symbol "DFR1193_1_1"
-				(pin input line
+				(pin power_in line
 					(at -3.81 -2.54 0)
 					(length 2.54)
 					(name "VCC1"
@@ -943,7 +943,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin power_in line
 					(at -3.81 -6.35 0)
 					(length 2.54)
 					(name "GND1"
@@ -961,10 +961,10 @@
 						)
 					)
 				)
-				(pin input line
+				(pin output line
 					(at -3.81 -10.16 0)
 					(length 2.54)
-					(name "SCL_IN"
+					(name "SCL_OUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -979,10 +979,10 @@
 						)
 					)
 				)
-				(pin input line
+				(pin output line
 					(at -3.81 -13.97 0)
 					(length 2.54)
-					(name "SDA_IN"
+					(name "SDA_OUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1015,10 +1015,10 @@
 						)
 					)
 				)
-				(pin output line
+				(pin input line
 					(at 19.05 -13.97 180)
 					(length 2.54)
-					(name "SDA_OUT"
+					(name "SDA_IN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1033,10 +1033,10 @@
 						)
 					)
 				)
-				(pin output line
+				(pin input line
 					(at 19.05 -10.16 180)
 					(length 2.54)
-					(name "SCL_OUT"
+					(name "SCL_IN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1051,7 +1051,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin power_in line
 					(at 19.05 -6.35 180)
 					(length 2.54)
 					(name "GND2"
@@ -1069,7 +1069,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin power_in line
 					(at 19.05 -2.54 180)
 					(length 2.54)
 					(name "VCC2"
@@ -1804,7 +1804,7 @@
 		)
 		(uuid "df5102ce-81e0-4045-a4da-aa6e838f0c88")
 	)
-	(text "On the datasheet (LTC4316) SCL_IN, SDA_IN are from the controller,\nSCL_OUT, SDA_OUT are to the sensor, just a naming convension but\non the schematic SCL_IN, SDA_IN are to sensor, SCL_OUT, SDA_OUT are \nto the MCU."
+	(text "On the datasheet (LTC4316) SCL_IN, SDA_IN are from the controller,\nSCL_OUT, SDA_OUT are to the sensor, so I canged the symbol to match that."
 		(exclude_from_sim no)
 		(at 85.344 135.89 0)
 		(effects
@@ -1847,6 +1847,12 @@
 		(uuid "0695e2fc-c407-4da7-9372-80327f23dbfe")
 	)
 	(junction
+		(at 111.76 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f36c933-da47-449f-b768-3f1a87caea73")
+	)
+	(junction
 		(at 204.47 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1869,6 +1875,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "42cd9915-5721-4b2b-8ac1-47ba46ecd5d3")
+	)
+	(junction
+		(at 111.76 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5e3fdfe8-52f7-4751-a579-9d6d04c471a5")
 	)
 	(junction
 		(at 193.04 50.8)
@@ -4841,6 +4853,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 111.76 153.67 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "89c15654-0f90-4c9a-b8a6-133f7a982439")
+		(property "Reference" "#FLG02"
+			(at 113.665 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 115.57 153.6699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 111.76 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "77750ec6-da52-460b-ab04-0db9d2c80a86")
+		)
+		(instances
+			(project "strain_gauge_2026"
+				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 222.25 133.35 0)
 		(unit 1)
@@ -5574,6 +5665,85 @@
 			(project "strain_gauge_2026"
 				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 111.76 157.48 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a3ad2162-4ca4-4f18-99fc-c302fbce3f02")
+		(property "Reference" "#FLG03"
+			(at 113.665 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 115.57 157.4799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 111.76 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "32df34a9-dd19-44d1-a636-464224ff8c2c")
+		)
+		(instances
+			(project "strain_gauge_2026"
+				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
