@@ -6168,6 +6168,18 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "TO NEXT BOARD"
+		(at 202.4 92.4 270)
+		(layer "Dwgs.User")
+		(uuid "f62f4455-4d44-43bc-ab47-985ad810a43c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "CONTROLLER"
 		(at 175 88 0)
 		(layer "Dwgs.User")
@@ -6190,18 +6202,6 @@
 				(size 1.2 1.2)
 				(thickness 0.25)
 				(bold yes)
-			)
-			(justify left bottom)
-		)
-	)
-	(gr_text "TO NEXT BOARD"
-		(at 202.4 92.4 270)
-		(layer "Edge.Cuts")
-		(uuid "f62f4455-4d44-43bc-ab47-985ad810a43c")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
 			)
 			(justify left bottom)
 		)
