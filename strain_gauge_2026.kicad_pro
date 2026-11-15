@@ -146,7 +146,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.4,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
@@ -159,7 +159,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.2,
+        "min_track_width": 0.4,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
@@ -541,7 +541,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -676,7 +676,7 @@
         "uuid": "5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
       }
     ],
-    "used_designators": "#FLG1-6,#PWR1-40,C1-16,J1-5,JP1-2,L1-2,Q1-2,R1-26,Rgauge2,SW1,U1-2",
+    "used_designators": "J1-5,#FLG1-6,R1-26,#PWR1-40,L1-2,C1-16,JP1-2,Q1-2,Rgauge2,SW1,U1-2",
     "variants": []
   },
   "sheets": [
