@@ -2729,6 +2729,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 82.55) (xy 209.55 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6ac6edb-30f1-435e-9138-1707d9463661")
+	)
+	(wire
+		(pts
 			(xy 245.11 72.39) (xy 247.65 72.39)
 		)
 		(stroke
@@ -2836,16 +2846,6 @@
 			(type default)
 		)
 		(uuid "f669b68a-4dcf-4d84-ab36-066e586b72e5")
-	)
-	(wire
-		(pts
-			(xy 233.68 133.35) (xy 233.68 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6f2755f-2241-4d9f-b67d-2db8109d11b8")
 	)
 	(wire
 		(pts
@@ -3628,84 +3628,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDD")
-		(at 233.68 133.35 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0780de3c-9baa-49f1-9bc4-c08599e4ac53")
-		(property "Reference" "#PWR017"
-			(at 233.68 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 233.68 128.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 233.68 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 233.68 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 233.68 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "00fd9b70-a925-4b4e-aec5-8cf983fe88a9")
-		)
-		(instances
-			(project "strain_gauge_2026"
-				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 120.65 45.72 180)
 		(unit 1)
@@ -3868,85 +3790,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 233.68 143.51 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "182e1457-859e-49d0-a64b-076911338be6")
-		(property "Reference" "#PWR014"
-			(at 233.68 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 233.68 148.59 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 233.68 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 233.68 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 233.68 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "589e3605-48ca-472c-9ed7-c186bc477f88")
-		)
-		(instances
-			(project "strain_gauge_2026"
-				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 209.55 82.55 270)
+		(at 205.74 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3956,7 +3800,7 @@
 		(dnp no)
 		(uuid "23c52c14-6d06-493f-9d26-6d9e6aa3bba4")
 		(property "Reference" "#PWR022"
-			(at 203.2 82.55 0)
+			(at 205.74 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3967,7 +3811,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 209.804 84.836 90)
+			(at 211.074 84.836 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3978,7 +3822,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 209.55 82.55 0)
+			(at 205.74 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3989,7 +3833,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 82.55 0)
+			(at 205.74 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4000,7 +3844,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 209.55 82.55 0)
+			(at 205.74 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4056,7 +3900,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
 			(at 211.7852 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -4127,14 +3971,15 @@
 				)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 91.44 144.78 0)
+		(property "Value" "+5V"
+			(at 93.98 148.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -4216,7 +4061,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
 			(at 194.0052 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -4380,7 +4225,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
 			(at 223.2152 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -4779,7 +4624,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
 			(at 261.3152 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -4822,88 +4667,6 @@
 			(project "strain_gauge_2026"
 				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
 					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 233.68 139.7 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "52b26380-57a5-4251-b479-43dd2d91c282")
-		(property "Reference" "C8"
-			(at 237.49 138.4299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 237.49 140.9699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 234.6452 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 233.68 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 233.68 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "4a38d34a-fb6b-4b2c-9cbc-1d7cd520c658")
-		)
-		(pin "1"
-			(uuid "00f44e7b-c46d-4c5d-aeff-6e808219eb63")
-		)
-		(instances
-			(project "strain_gauge_2026"
-				(path "/5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
-					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -5349,14 +5112,15 @@
 				)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 222.25 128.27 0)
+		(property "Value" "+5V"
+			(at 224.79 132.0799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -5427,14 +5191,15 @@
 				)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 247.65 66.04 0)
+		(property "Value" "+5V"
+			(at 250.19 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -6089,14 +5854,15 @@
 				)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 210.82 128.27 0)
+		(property "Value" "+5V"
+			(at 213.36 132.0799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -6257,7 +6023,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
 			(at 194.0052 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -6572,7 +6338,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
 			(at 228.2952 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -7382,7 +7148,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
 			(at 194.0052 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -7453,14 +7219,15 @@
 				)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 43.18 144.78 0)
+		(property "Value" "+5V"
+			(at 45.72 148.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -7531,14 +7298,15 @@
 				)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 135.89 149.86 0)
+		(property "Value" "+5V"
+			(at 138.43 153.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
