@@ -178,6 +178,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -189,6 +190,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -200,6 +202,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -211,6 +214,7 @@
       ],
       "track_widths": [
         0.0,
+        0.4,
         0.5
       ],
       "tuning_pattern_settings": {
@@ -532,8 +536,8 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
-    "netclass_assignments": null,
+    "net_colors": {},
+    "netclass_assignments": {},
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -676,7 +680,7 @@
         "uuid": "5a10e1a7-6a1b-4f11-a3d3-893ec92bfd42"
       }
     ],
-    "used_designators": "J1-5,#FLG1-6,R1-26,#PWR1-40,L1-2,C1-16,JP1-2,Q1-2,Rgauge2,SW1,U1-2",
+    "used_designators": "#FLG1-6,#PWR1-40,C1-16,H1-4,J1-5,JP1-2,L1-2,Q1-2,R1-26,Rgauge2,SW1,U1-2",
     "variants": []
   },
   "sheets": [
